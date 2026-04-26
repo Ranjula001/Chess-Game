@@ -1,0 +1,94 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-display: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --font-body: Aptos, "Segoe UI", "Trebuchet MS", sans-serif;
+  --bg: #06080c;
+  --panel: rgba(10, 16, 24, 0.86);
+  --panel-strong: rgba(18, 25, 37, 0.94);
+  --panel-soft: rgba(255, 255, 255, 0.05);
+  --line: rgba(255, 255, 255, 0.08);
+  --text: #edf0f5;
+  --muted: #9aa5b7;
+  --ember: #d99a53;
+  --moss: #6a826c;
+  --danger: #b6524c;
+  --selection: rgba(243, 190, 118, 0.65);
+  --legal: rgba(101, 154, 116, 0.72);
+  --last-move: rgba(133, 156, 204, 0.42);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top, rgba(217, 154, 83, 0.12), transparent 35%),
+    radial-gradient(circle at bottom, rgba(104, 132, 111, 0.16), transparent 42%),
+    linear-gradient(180deg, #090d13 0%, #06080c 100%);
+  color: var(--text);
+}
+
+body {
+  font-family: var(--font-body);
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(217, 154, 83, 0.24);
+}
+
+.panel-surface {
+  background: linear-gradient(180deg, rgba(18, 25, 37, 0.9), rgba(10, 16, 24, 0.92));
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(20px);
+}
+
+.premium-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(217, 154, 83, 0.5) transparent;
+}
+
+.premium-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.premium-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.premium-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: rgba(217, 154, 83, 0.4);
+  border: 2px solid transparent;
+}

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\assets",
+    "\\src\\components",
+    "\\src\\components\\board",
+    "\\src\\components\\pieces"
+  ],
+  "SelectedNode": "\\src\\components\\board\\BoardSquare.tsx",
+  "PreviewInSolutionExplorer": false
+}
